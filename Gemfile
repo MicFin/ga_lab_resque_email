@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# mailing gem
+gem 'mail'
+
+# for queing our emails
+gem 'resque', '~> 2.0.0.pre.1', github: 'KNEIP/resque'
+
 gem 'rails', '4.0.0'
 gem 'pg'
 gem 'uglifier', '>= 1.3.0'
@@ -13,7 +19,6 @@ gem 'pry-rails'
 gem 'devise'
 gem 'redis'
 
-# gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
